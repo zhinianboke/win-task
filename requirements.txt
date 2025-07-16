@@ -1,0 +1,52 @@
+# ============================================================================
+# Win-Task - Windows 定时任务管理系统 依赖列表
+# ============================================================================
+
+# GUI相关依赖
+PyQt5==5.15.9                  # Qt5 GUI框架
+pillow>=10.0.0                 # 图像处理库，用于图标和主题
+
+# 任务调度相关
+schedule==1.2.1                # 简单的任务调度库
+croniter>=2.0.1                # Cron表达式解析和计算
+apscheduler>=3.10.4            # 高级Python任务调度器
+
+# 网络请求
+requests>=2.31.0               # HTTP请求库
+urllib3>=1.26.0                # HTTP客户端库（requests依赖）
+
+# 数据库相关
+sqlalchemy>=2.0.20             # Python SQL工具包和ORM
+
+# 安全和加密
+bcrypt>=4.0.1                  # 密码哈希库
+cryptography>=41.0.3           # 加密库，用于敏感数据保护
+
+# Windows系统相关
+pywin32>=306; sys_platform == "win32"    # Windows API访问
+psutil>=5.9.5                  # 系统和进程监控
+
+# 日志和配置
+loguru>=0.7.0                  # 增强的日志库
+python-dotenv>=1.0.0           # 环境变量管理
+
+# 邮件通知支持
+email-validator>=2.0.0         # 邮件地址验证
+
+# 开发和测试依赖
+pytest>=7.4.0                  # 测试框架
+pytest-qt>=4.2.0               # PyQt测试支持
+pytest-cov>=4.1.0              # 测试覆盖率
+
+# 打包和分发
+pyinstaller>=5.13.0            # 打包为可执行文件
+setuptools>=68.0.0             # 包管理工具
+
+# 代码质量
+flake8>=6.0.0                  # 代码风格检查
+black>=23.0.0                  # 代码格式化
+isort>=5.12.0                  # import排序
+
+# 文档生成
+sphinx>=7.0.0                  # 文档生成工具
+sphinx-rtd-theme>=1.3.0        # ReadTheDocs主题

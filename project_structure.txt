@@ -1,0 +1,55 @@
+win-task/
+├── main.py                  # 程序入口文件
+├── requirements.txt         # 项目依赖
+├── config.ini              # 配置文件
+├── README.md               # 项目说明文档
+├── setup.py                # 打包配置
+├── assets/                 # 资源文件夹
+│   ├── icons/              # 图标资源
+│   └── themes/             # 主题资源
+├── data/                   # 数据存储目录
+│   ├── tasks/              # 任务配置存储
+│   ├── logs/               # 日志存储
+│   └── backups/            # 配置备份
+├── src/                    # 源代码目录
+│   ├── core/               # 核心功能模块
+│   │   ├── __init__.py
+│   │   ├── scheduler.py    # 任务调度器
+│   │   ├── executor.py     # 任务执行器
+│   │   ├── task.py         # 任务基类
+│   │   ├── logger.py       # 日志管理
+│   │   └── settings.py     # 系统设置
+│   ├── models/             # 数据模型
+│   │   ├── __init__.py
+│   │   ├── task_model.py   # 任务数据模型
+│   │   ├── group_model.py  # 分组数据模型
+│   │   └── user_model.py   # 用户数据模型
+│   ├── tasks/              # 具体任务类型实现
+│   │   ├── __init__.py
+│   │   ├── url_task.py     # URL请求任务
+│   │   ├── program_task.py # 程序执行任务
+│   │   ├── file_task.py    # 文件操作任务
+│   │   ├── system_task.py  # 系统操作任务
+│   │   └── db_task.py      # 数据库操作任务
+│   ├── ui/                 # 用户界面
+│   │   ├── __init__.py
+│   │   ├── main_window.py  # 主窗口
+│   │   ├── task_dialog.py  # 任务对话框
+│   │   ├── calendar_view.py # 日历视图
+│   │   ├── dashboard.py    # 仪表盘
+│   │   ├── system_tray.py  # 系统托盘
+│   │   └── widgets/        # 自定义控件
+│   ├── utils/              # 工具函数
+│   │   ├── __init__.py
+│   │   ├── cron_parser.py  # Cron表达式解析
+│   │   ├── notifier.py     # 通知管理
+│   │   ├── encryption.py   # 加密功能
+│   │   └── backup.py       # 备份功能
+│   └── api/                # API接口
+│       ├── __init__.py
+│       └── rest_api.py     # REST API实现
+└── tests/                  # 测试代码
+    ├── __init__.py
+    ├── test_scheduler.py
+    ├── test_tasks.py
+    └── test_api.py 
